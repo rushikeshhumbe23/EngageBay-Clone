@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: rgba(252, 243, 236, 0.685);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#signup_form{
+    width: 27%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 25px;
+}
+#signup_form input{
+    width: 90%;
+    height: 50px;
+    border: 1px solid grey;
+    margin: 15px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+#signup_form input:hover{
+    border: 2px solid rgb(14, 109, 218);
+}
+#signup_form > img{
+    width: 50%;
+}
+#signup_form > h1{
+    color: rgba(65, 61, 61, 0.925);
+}
+.no_decoration{
+    text-decoration: none;
+    color: blue;
+}
+#submit_BTN{
+    background-color: rgb(36, 126, 228);
+    color: white;
+    margin: 0px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing:1px;
+}
+#submit_BTN:hover{
+    background-color: blue;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.sign_in_with_google> img{
+    width: 8%;
+    margin-right: 15px; 
+}
+.sign_in_with_google{
+    display: flex;
+    width: 93%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 17px;
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(237, 250, 250);
+    border: none;
+    margin-bottom: 35px;
+    margin-top: 28px;
+}
+#signup_form > p{
+    color: grey;
+}
+.sign_in_with_google:hover{
+    background-color: rgb(201, 245, 245);
+    cursor: pointer;
+}
