@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow with Bro Signup</title>
+    <link rel="stylesheet" href="signup.css">
+   
+</head>
+<body>
+
+    <div  id="signup_form">
+
+        <img src="./images/logo.png" alt="">
+        <p>Already have an account? <a  class="no_decoration" href="./login.html"  target="_blank">Login</a></p>
+
+        <h1>Get Started for FREE</h1>
+
+            <form id="form">
+              <input type="text"  placeholder="Name"  id="name">
+              <input type="email" placeholder="Username (Email Address)" id="email">
+              <input type="password" placeholder="Password" id="password">
+              <input type="number" class="mobile" placeholder="Mobile No" id="mobile_no">
+              <input type="text" placeholder="Web URL" id="web_url">
+
+              
+                <input  id="submit_BTN" type="submit" value="SIGN UP" />
+            
+            </form>
+
+            <p>------OR------</p>
+
+            <button class="sign_in_with_google"><img  src="https://img.icons8.com/color/2x/google-logo.png" alt="error">SIGN UP WITH G SUITE</button>
+
+            <p>©2022 Grow With Bro, Inc. All Rights Reserved.</p>
+            <p>Privacy Policy </p>
+
+    </div>
+</body>
+        
+ <script>
+        
+          let form = document.getElementById("form");
+         
+          let data =[];
+        
+        form.addEventListener("submit" , (e) =>{
+           e.preventDefault();
+          
+           let formdata= {
+            name : form.name.value,
+            email : form.email.value ,
+            password : form.password.value,
+            mobile_no: form.mobile_no.value,
+            web_url :form.web_url.value
+           };
+           if(form.name.value !="" && form.email.value !="" && form.password.value !="" && form.mobile_no.value !="" && form.web_url.value !=""){
+            let a= ""+form.mobile_no.value;
+            let b=""+ form.password.value;
+            console.log(b);
+            console.log(b.length)
+            if(a.length == 10 ){
+              
+                if(b.length >=8){
+
+                    data.push(formdata);
+                    alert("Account Created Successful")
+                    window.location.href = "./index.html"
+
+                } else {
+                    alert("password must be at least 8 charecters")
+                }
+             } else {
+              alert("Mobile nomber must be 10 Digits")
+             }
+
+           } else{
+            alert("fill all the necessary filds for signup")
+           }
+
+          localStorage.setItem("account-data" , JSON.stringify(data));
+        
+        });         
+ </script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

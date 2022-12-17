@@ -1,6 +1,6 @@
 #navbar{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    height: 80px;
+    height: 70px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(39, 38, 38, 0.822);
     font-size: 16px;
@@ -22,8 +22,10 @@ body button:hover{
     margin:auto;
 }
 .nav{
-    width: 55%;
+    width: 60%;
     margin-left:100px ;
+    display: flex;
+    align-items: center;
 }
  #navbar .nav{
     float: left;
@@ -51,7 +53,10 @@ ul .nav_list_1{
     text-decoration: none;
     font-size: 15px;
 }
-
+.signup_deco_none{
+    text-decoration: none;
+    color: white;
+}
 #navbar > div > div:nth-child(3){
      justify-content: space-evenly;
      width:30% ;
@@ -88,7 +93,7 @@ ul .nav_list_1{
 #banner-1{
     display: flex;
     flex-direction: column;
-   background-color: burlywood;
+   background-color: rgba(182, 174, 174, 0.719);
 }
 #banner-1 > div{
     width: 100%;
@@ -145,6 +150,7 @@ ul .nav_list_1{
     background-color: rgb(255, 81, 0);
     color: white;
     border: none;
+    font-size: 17px;
 
 }
 .banner-Free_for_15_users{
@@ -200,6 +206,10 @@ ul .nav_list_1{
     background-color: rgb(36, 36, 138);
     box-sizing: border-box;
     padding-bottom: 70px;
+    
+}
+.happy_svg{
+    background-color:rgb(36, 36, 138) ;
 }
 #happy_customers>h2{
     margin: 0px;
@@ -211,7 +221,7 @@ ul .nav_list_1{
 }
 .Doit > p{
     margin:0px;
-    padding: 0px;
+    padding: 0px;   
     padding-top: 10px;
 }
 #Do_It_All_With_Bro{
@@ -246,9 +256,13 @@ ul .nav_list_1{
 #Todo_list{
     margin-top: 80px;
 }
-
+.one_in_all_input_svg{
+    background-color: #e7e7e7;
+    position: relative;
+    top: 70px;
+}
 #banner2_cont{
-    background-color: rgb(231, 231, 231);
+    background-color: #e7e7e7;
     padding: 80px;
     margin-top: 60px;
 }
@@ -314,6 +328,7 @@ ul .nav_list_1{
     background-color: rgb(255, 81, 0);
     color: white;
     border: none;
+    font-size: 17px;
 
 }
 .banner-Free_for_15_users{
@@ -395,7 +410,7 @@ ul .nav_list_1{
     color: beige;
 }
 #footer{
-    background-color: blue;
+    background-color: #0000ffc5 ;
 }
 .footer_upper >div > button{
      
@@ -410,6 +425,9 @@ ul .nav_list_1{
 }
 .fot_signupbtn{
     background-color:  rgb(255, 81, 0);
+}
+.signup_deco_none_foot{
+    text-decoration: none;
     color: white;
 }
 .fot_callbtn{
@@ -437,6 +455,9 @@ ul .nav_list_1{
     justify-content: space-evenly;
     margin: auto;
 }
+.fot_list>div >h3{
+    font-size: 20px;
+}
 .foter_input{
     color: white;
 }
@@ -446,7 +467,7 @@ ul .nav_list_1{
 .social{
     display: flex;
     color: white;
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .social >div{
@@ -454,4 +475,77 @@ ul .nav_list_1{
 }
 .social >div img{
     width: 30%;
+}
+.upper_svg{
+    width: 100%;
+    position: relative;
+    top: 50px;
+    background-color:#0000ffc5  ;
+}
+
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.74);    
+}
+.see_more_integrationsbtn{
+    width: 100%;
+   display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.see_more_integrationsbtn > button{
+    height: 55px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #360591;
+    background-color: white;
+    color:#360591;
+    font-size: 17px;
+}
+.see_more_integrationsbtn > button:hover{
+    background-color: #200258;
+    color: white;
+}
+#foot_list_flex_1{
+    width: 90%;
+    margin: auto;
+    display: none;
+    text-align: center;
+}
+#foot_list_flex_1 .fot_list_1{
+    width: 19%;
+    display: inline-block;
+    margin: auto;
+}
+.fot_list_1 ul{
+    list-style: none;
+}
+.fot_list_1 ul li{
+    margin-bottom: 20px;
+}
+.fot_list_1 > div{
+    color: white;
+    text-align: justify;
+}
+.fot_list_1 >div>h3{
+    text-align: center;
+}
+.see_more_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.see_more_block >button{
+    height: 30px;
+    width: 7%;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    color: #200258;
+}
+.see_more_block >button:hover{
+    background-color: #200258;
+    color: white;
+    border: none;
+    cursor:pointer;
 }

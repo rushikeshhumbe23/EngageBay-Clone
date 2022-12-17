@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(233, 231, 229);
+}
+
+#forgot_pass_form{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+.no_decoration{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+#form input{
+    width: 80%;
+    outline: none;
+    height: 50px;
+    margin: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(216, 214, 214);
+}
+#form input:hover{
+    cursor: pointer;
+    border: 1px solid  cornflowerblue;
+}
+#forgot_pass_form>img{
+    width: 50%;
+}
+p{
+    font-size: 13px;
+    margin-top: 0px;
+    color: gray;
+}
+#submit_BTN{
+    color: white;
+    background-color: rgba(10, 49, 224, 0.747);
+    font-weight: bold;
+}
+#submit_BTN:hover{
+    background-color: rgb(0, 4, 255);
+}
+#result{
+    text-align: center;
+}

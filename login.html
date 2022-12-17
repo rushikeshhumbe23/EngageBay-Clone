@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow with Bro Login</title>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+
+    <div  id="login_form">
+
+        <img src="./images/logo.png" alt="">
+        <p>Don't have an account yet? <a  class="no_decoration" href="./signup.html"  target="_blank">Sign Up</a></p>
+
+        <h1>Login</h1>
+
+            <form id="form">
+              <input type="email" placeholder="Work Email" id="email">
+              <input type="password" placeholder="Password" id="password">
+
+              <p class="forgot_pass"><a href="./forgotpass.html">Forgot Password?</a></p>
+
+                <input  class="submit_BTN" type="submit" value="LOG IN" />
+
+            </form>
+
+            <p>------OR------</p>
+
+            <button class="sign_in_with_google"><img  src="https://img.icons8.com/color/2x/google-logo.png" alt="error">SIGN UP WITH G SUITE</button>
+
+            <p>©2022 Grow With Bro, Inc. All Rights Reserved.</p>
+            <p>Privacy Policy </p>
+
+    </div>
+</body>
+</html>
+
+<script>
+
+let myform=document.getElementById("form")
+
+let LS = JSON.parse(localStorage.getItem("account-data")) ||[];
+    
+   myform.addEventListener("submit" , (e) =>{
+     e.preventDefault();
+     
+     LS.forEach((element , index) =>{
+    
+      if(element.email === myform.email.value && element.password === myform.password.value){
+        alert("Sign in Successful");
+        window.location.href = "./index.html"
+      } else {
+        alert("Wrong Credentials");
+      }
+     });
+
+   });
+</script>
+
+    

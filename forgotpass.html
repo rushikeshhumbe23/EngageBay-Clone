@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgor Password</title>
+    <link rel="stylesheet" href="./forgotpass.css">
+</head>
+<body>
+
+    <h1 id="result"></h1>
+    <div  id="forgot_pass_form">
+
+        <img src="./images/logo.png" alt="">
+        
+
+        <h1>Reset Password</h1>
+        <p>Please enter the email address that you'd like us to send</p>
+        <p>your password reset information to.</p>
+
+            <form id="form">
+              <input type="email" placeholder="Enter your registered email address" id="email">
+
+                <input  id="submit_BTN" type="submit" value="SUBMIT" />
+
+            </form>
+
+
+            <p>Already have an account? <a  class="no_decoration" href="./login.html"  target="_blank">Login </a></p>
+
+            <p>©2022 GrowWithBro, Inc. All Rights Reserved.</p>
+            <p style="color: cornflowerblue;">Privacy Policy </p>
+
+    </div>
+
+    
+</body>
+
+<script>
+
+let heading = document.getElementById("result");
+let myform = document.getElementById("form");
+let LS = JSON.parse(localStorage.getItem("account-data")) ||[];
+
+myform.addEventListener("submit" ,(e)=>{
+    e.preventDefault();
+    LS.forEach((element, index) =>{
+
+        if(element.email != form.email.value){
+            alert("Email is not Registred Please Register and then Log In");
+            window.location.href = "./signup.html"
+        } else{
+            heading.innerText= "Your Password is :-"+element.password;            
+        }
+
+    })
+})
+
+
+
+
+
+</script>
+</html>
