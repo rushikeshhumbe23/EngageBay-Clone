@@ -549,3 +549,60 @@ hr{
     border: none;
     cursor:pointer;
 }
+/* Cadrs div to copy from here  */
+
+
+.card_get_started_BTN {
+    background-color:rgb(114, 48, 175);
+    border: none;
+    width: 30%;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.card_get_started_BTN a{
+    text-decoration: none;
+    color: white;
+}
+
+.card_get_started_BTN a:hover{
+    cursor: pointer;
+    background-color: rgb(84, 29, 134);
+    color: white;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px ;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+#cards p{
+    color: gray;
+}
+.card_upper{
+    width: 50%;  
+    margin: auto;
+}
+.card_upper > img{
+    width:50% ;
+      margin: auto;  
+      display: block;
+
+}
+.four_cards{
+     margin: auto;
+      border: 1px solid rgb(208, 208, 209); 
+      padding: 30px; 
+      box-sizing: border-box;
+      border-radius: 10px;
+}
+.four_cards:hover{
+    width: 103%;
+    height: 103%; 
+}
