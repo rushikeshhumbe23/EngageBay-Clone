@@ -5,6 +5,7 @@
     color: rgba(39, 38, 38, 0.822);
     font-size: 16px;
     position:fixed;
+    z-index: 1;
     top: 0;
     width: 100%;
     background-color: white;
@@ -103,7 +104,6 @@ ul .nav_list_1{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .slowgun > h1{
    
     line-height: 1.2;
@@ -165,7 +165,6 @@ ul .nav_list_1{
 .banner-Free_for_15_users>img{
     width: 10%;
 }
-
 #partners_1{
     display: flex;
     justify-content: space-evenly;
@@ -243,11 +242,11 @@ ul .nav_list_1{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(241, 246, 255, 0.959);
     text-align: center;
+    transition: 0.5s;
 }
 .do_with_bro:hover{
     border: 2px solid rgb(9, 53, 134);
-    width: 104%;
-    height: 104%;
+    transform: scale(1.1);
 }
 
 .do_with_bro >img{
@@ -259,12 +258,14 @@ ul .nav_list_1{
 .one_in_all_input_svg{
     background-color: #e7e7e7;
     position: relative;
-    top: 70px;
+    top: 70px; 
+   
 }
 #banner2_cont{
     background-color: #e7e7e7;
     padding: 80px;
     margin-top: 60px;
+    width: 100%;
 }
 #banner-2{
     display: flex;
@@ -383,7 +384,6 @@ ul .nav_list_1{
 .footer_upper > div:nth-child(2){
     width: 50%;
 }
-
 .footer_upper > div >img{
     width: 90%;
 }
@@ -482,7 +482,6 @@ ul .nav_list_1{
     top: 50px;
     background-color:#0000ffc5  ;
 }
-
 hr{
     border: 1px solid rgba(0, 0, 0, 0.74);    
 }
@@ -549,9 +548,6 @@ hr{
     border: none;
     cursor:pointer;
 }
-/* Cadrs div to copy from here  */
-
-
 .card_get_started_BTN {
     background-color:rgb(114, 48, 175);
     border: none;
@@ -566,7 +562,6 @@ hr{
     text-decoration: none;
     color: white;
 }
-
 .card_get_started_BTN a:hover{
     cursor: pointer;
     background-color: rgb(84, 29, 134);
@@ -601,8 +596,12 @@ hr{
       padding: 30px; 
       box-sizing: border-box;
       border-radius: 10px;
+      transition: 1s;
 }
 .four_cards:hover{
-    width: 103%;
-    height: 103%; 
+    transform: scale(1.06);
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+span img{
+    width: 10px;
 }
